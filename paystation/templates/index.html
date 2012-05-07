@@ -1,59 +1,45 @@
 {% extends 'baseframe.html' %}
 
-{% block title %}Meta Refresh{% endblock %}
-{% block description %}A conference on front-end engineering{% endblock %}
+{% block title %}PayStation{% endblock %}
+{% block description %}A Conference on Electronic Payments{% endblock %}
 
 {% block headerbox %}
 <header class="header">
   {% include "baseframe/networkbar.html" -%}
   <div class="container">
     <div class="row">
-      <div class="web-history span9">
-        <dl>
-          <dt>2008</dt><dd>Google Chrome</dd>
-          <dt>2007</dt><dd>Mobile Safari</dd>
-          <dt>2006</dt><dd>HTML5</dd>
-          <dt>2004</dt><dd>Mozilla Firefox</dd>
-          <dt>2004</dt><dd>CSS3</dd>
-          <dt>2003</dt><dd>Apple Safari</dd>
-          <dt>1999</dt><dd>AJAX</dd>
-          <dt>1998</dt><dd>CSS 2.0</dd>
-          <dt>1997</dt><dd>Flash</dd>
-          <dt>1996</dt><dd>CSS 1.0</dd>
-          <dt>1996</dt><dd>HTML 4.0</dd>
-          <dt>1995</dt><dd>Internet Explorer</dd>
-          <dt>1995</dt><dd>JavaScript</dd>
-          <dt>1995</dt><dd>Opera</dd>
-          <dt>1994</dt><dd>Netscape</dd>
-          <dt>1994</dt><dd>HTML 3.0</dd>
-          <dt>1993</dt><dd>Mosaic</dd>
-          <dt>1993</dt><dd>HTML 2.0</dd>
-          <dt>1991</dt><dd>HTML 1.0</dd>
-          <dt>1990</dt><dd>HTTP</dd>
-        </dl>
-      </div><!-- /web-history -->
-      <div class="banner span6 pull-right">
-      <p class="callout">A conference that revisits the construction of <strong>user interface</strong> on the world&#8217;s biggest platform &#8211; <strong>the web</strong>.</p>
-      <hgroup>
-        <h1 class="ir"><b>Meta</b> Refresh</h1>
-        <h2><b>21<sup>st</sup> April</b> 2012</h2>
-        <h3><b>Dharamaram College</b> Bangalore</h3>
-      </hgroup>
-      <p class="register"><a class="btn btn-success" href="http://metarefresh.doattend.com/"><strong>Buy Tickets</strong><br>Rs. 1400 at Venue</a></p>
-      </div>
-    </div><!--/row-->
+      <div class="masthead span12">
+        <hgroup>
+          <h1 class="ir span12"><b>Pay</b>Station</h1>
+          <h2><b>September</b> 2012 | <b>Mumbai</b></h2>
+        </hgroup>
+        
+        </div>
+      
+    </div>
+    
+    <div class="row">
+      <div class="banner span12">
+        <!--<p class="callout">A conference that revisits the construction of <strong>user interface</strong> on the world&#8217;s biggest platform &#8211; <strong>the web</strong>.</p>-->
+          <p class="register"><a class="btn btn-primary" href="http://funnel.hasgeek.com/paystation/"><strong>Propose a session</strong><br>on the Funnel</a></p>
+          
+      </div>       
+      
+    </div>
+    
+    
   </div><!-- /container -->
   
   <div class="navbar">
     <div class="container">
       <ul class="nav">
-        <li class="home"><a title="Home (Top of the page)" href="#root"><b>Meta</b> Refresh</a></li>
+        <li class="home"><a title="Home (Top of the page)" href="#root"><b>Pay</b>Station</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#venue">Venue</a></li>
         <li class="spacer about"><a href="#about">About</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#credits">Credits</a></li>
-        <li class="register"><a href="http://metarefresh.doattend.com/">Register</a></li>
+        <li class="register"><a href="http://paystation.doattend.com/">Register</a></li>
       </ul>
     </div><!-- /container -->
   </div><!-- /navbar -->
@@ -70,20 +56,11 @@
     <div class="row">
       <h2>About</h2>
       <div class="description legible span8">
-        <p><abbr>HTML5</abbr> and <abbr>CSS3</abbr> have very quickly moved from being tentative new standards to the base standards for every major desktop and mobile browser. <abbr>HTML5</abbr> is now just <abbr>HTML</abbr>, a modular, living standard that no longer needs a version number.</p>
-
-        <p>Now that we are no longer fighting over platforms, it&#8217;s time to put the specs aside and revisit the construction of user interface: how do we raise the bar for stellar user interface on the web?</p>
-
-        <p>Meta Refresh is a follow-up to <a href="http://www.doctypehtml5.in/">DocType <abbr>HTML5</abbr></a> from 2010-11 and is a conference on web <abbr title="User Interface">UI</abbr> engineering.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ...</p>
       </div><!-- span8 -->
-      <div class="featuring span4">
-        <div class="funnel legible">
-          <p><a class="btn btn-primary legible" href="http://funnel.hasgeek.com/metarefresh/">Propose a session<br><i>on the Funnel</i></a></p>
-        </div>
-        <div class="highlight legible">
-          <p><a class="btn btn-inverse legible" href="{{ url_for('contest') }}"><i>Meta Refresh</i><br>Take Charge</a></p>
-          <p>Redesign your least favourite Indian Government website.</p>
-        </div>
+      
+      <div class="banner span4">
+          <p class="register"><a class="btn btn-success" href="http://paystation.doattend.com/"><strong>Buy Tickets</strong><br>Rs. 700 Early Geek</a></p>
       </div>
     </div><!-- /row -->
     <hr class="divider">
@@ -120,34 +97,25 @@
 
 
       <article class="open sponsor-silver sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-directi"><img alt="Talk.To" src="{{ url_for('static', filename='img/sponsors/talkto.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-silver sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-langoor"><img alt="Langoor.mobi" src="{{ url_for('static', filename='img/sponsors/langoor.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-silver sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-ideadevice"><img alt="Idea Device" src="{{ url_for('static', filename='img/sponsors/ideadevice.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-silver sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-adobe"><img alt="Adobe" src="{{ url_for('static', filename='img/sponsors/adobe.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-silver sponsor span2">
         <p class="logo"><img alt="Become a Sponsor" src="http://placehold.it/90x100/E3E3E3/666&amp;text=You"></p>
+      </article>
+      <article class="open empty sponsor-silver sponsor span2">
+        <p class="logo"></p>
+      </article>
+      <article class="open empty sponsor-silver sponsor span2">
+        <p class="logo"></p>
+      </article>
+      <article class="open empty sponsor-silver sponsor span2">
+        <p class="logo"></p>
+      </article>
+      <article class="open empty sponsor-silver sponsor span2">
+        <p class="logo"></p>
       </article>
       <article class="open empty sponsor-silver sponsor span2">
         <p class="logo"></p>
       </article>
       
       
-      <article class="open sponsor-community sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-practo"><img alt="Practo" src="{{ url_for('static', filename='img/sponsors/practo.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-community sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-fusioncharts"><img alt="Fusion Charts" src="{{ url_for('static', filename='img/sponsors/fusioncharts.png') }}"></a></p>
-      </article>
-      <article class="open sponsor-community sponsor span2">
-        <p class="logo"><a data-toggle="modal" href="#sponsor-capillary"><img alt="Capillary Technologies" src="{{ url_for('static', filename='img/sponsors/capillary.png') }}"></a></p>
-      </article>
       <article class="open sponsor-community sponsor span2">
         <p class="logo"><img alt="Become a Sponsor" src="http://placehold.it/90x50/E3E3E3/666&amp;text=You"></p>
       </article>
@@ -157,7 +125,16 @@
       <article class="open empty sponsor-community sponsor span2">
         <p class="logo"></p>
       </article>
-
+      <article class="open empty sponsor-community sponsor span2">
+        <p class="logo"></p>
+      </article>
+      <article class="open empty sponsor-community sponsor span2">
+        <p class="logo"></p>
+      </article>
+      <article class="open empty sponsor-community sponsor span2">
+        <p class="logo"></p>
+      </article>
+      {#
       <div class="modal fade sponsor-box" id="sponsor-practo">
         <div class="modal-header">
           <a class="close" data-dismiss="modal">&times;</a>
@@ -173,104 +150,8 @@
           <a data-dismiss="modal" class="btn">Close</a>
         </div>
       </div>
+      #}
       
-      <div class="modal fade sponsor-box" id="sponsor-directi">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>Talk.to</h3>
-        </div>
-        <div class="modal-body">
-          <p><em>A Directi business</em></p>
-          <p><a class="sponsor-exit" href="http://www.directi.com">Directi</a> is a 300+ million dollars group of Businesses, that develop innovative mass-market Web Products serving millions of Customers worldwide.</p>
-          <p>Directi businesses rank amongst the fastest growing businesses worldwide in their corresponding industry segments. The combined Product Portfolio of various Directi businesses includes - Communication and Collaboration apps, Social Networking software, Instant messaging, Context Analysis Engines, Antispam and Antivirus Solutions, Large scale Billing and Provisioning platforms, Traffic Monetization Solutions, Online Advertising Solutions, DNS Management Products, Linux and Windows Server Management Software, Web Hosting Control Panels and much more.</p>
-          <p>All our businesses have been profitable from inception. All assets of the group are organically funded without any external debt or borrowing.</p>
-          <p><a class="sponsor-exit" href="http://talk.to">Talk.to</a> provides communication, collaboration, social networking and content publishing software. Our software is used by our network of authorized partners to provide these services to users worldwide.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="http://www.talk.to/" class="btn btn-primary sponsor-exit">Visit Talk.to</a>
-          <a href="http://www.directi.com/" class="btn btn-primary sponsor-exit">Visit Directi</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
-      
-      <div class="modal fade sponsor-box" id="sponsor-langoor">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>Langoor.mobi</h3>
-        </div>
-        <div class="modal-body">
-          <p><a class="sponsor-exit" href="http://app.langoor.mobi/">langoor.mobi</a> is a tool created by <a class="sponsor-exit" href="http://langoor.com.au/">Langoor</a>, to help you create mobile websites easily. Mobile interfaces need to consider small screens, avoid zoom for view, load faster at low speeds and work for all multiple mobile phone-browser-OS combinations. <a class="sponsor-exit" href="http://app.langoor.mobi/">langoor.mobi</a> converts your existing desktop site in a few minutes and makes it mobile friendly automatically. Usually the conversion is about 60-70% accurate, and so then transfers the creative control to the user for further optimization. The user can edit layout, navigation and content on the mobile version before making it live!  
-
-          <p>Currently <a class="sponsor-exit" href="http://app.langoor.mobi/">langoor.mobi</a> is being offered at a special price of only $10/month.</p>          
-        </div>
-        <div class="modal-footer">
-          <a href="http://app.langoor.mobi/" class="btn btn-primary sponsor-exit">Visit langoor.mobi</a>
-          <a href="http://langoor.com.au/" class="btn btn-primary sponsor-exit">Visit Langoor</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
-      
-      <div class="modal fade sponsor-box" id="sponsor-fusioncharts">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>FusionCharts</h3>
-        </div>
-        <div class="modal-body">
-          <p><em>Stunning charts in JavaScript (HTML5) and Flash</em></p>
-          <p>FusionCharts v3 helps you create animated and interactive charts for web and enterprise applications in JavaScript (HTML5) and Flash. It is the industry’s leading enterprise-grade charting component that functions seamlessly on PCs, Macs, iPads, iPhones and a majority of other mobile devices.</p>
-          <p>FusionCharts is used by 20,000 customers and 450,000 users in over 118 countries to add "wow" to their applications. This extensive list of customers includes a majority of Fortune 500 companies and some of the web's most popular sites like Weather.com, LinkedIn, Google Docs and Federal IT Dashboard.</p>
-          <p>The company recently opened their Bangalore office and are <a class="sponsor-exit" href="http://www.fusioncharts.com/company/careers/">looking for smart and passionate people</a> who want to be a part of a growing product company.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="http://www.fusioncharts.com/" class="btn btn-primary sponsor-exit">Visit FusionCharts</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
-
-      <div class="modal fade sponsor-box" id="sponsor-ideadevice">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>Idea Device</h3>
-        </div>
-        <div class="modal-body">
-          <p><a href="http://www.ideadevice.com/">Idea Device</a> (ID) develops software automation products for medium to large enterprises. Data centers of some of the largest stock exchanges, global banks and manufacturing giants are powered by our software and we are about to take on automation of cloud infrastructure.</p>
-          <p>ID was voted one of the top product startups from India last year. We were incubated by IIM-Bangalore and are funded by a valley VC. We are a young engineer driven startup and we are hiring! - Come help us shake up the IT automation industry - tons of challenging work and lots and lots of coffee.</p>
-          
-        </div>
-        <div class="modal-footer">
-          <a href="http://www.ideadevice.com/" class="btn btn-primary sponsor-exit">Visit Idea Device</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
-
-      <div class="modal fade sponsor-box" id="sponsor-capillary">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>Capillary Technologies</h3>
-        </div>
-        <div class="modal-body">
-          <p>Capillary brings instant and social engagement to the retail point of sale. Its proven Cloud based CRM technology which is deployed in more than 5000 retail outlets in India, UK, Middle East and Africa helps retailers capture data about customers and reward them in the best possible fashion, backed up by a lot of gold standard analytics and insightful business consulting. The Capillary clientele includes marquee brands such as Raymond, Peter England, Planet Fashion, Puma, Mobile Store, Pizza Hut, Xtreme Sports Bar etc. Over 15 million customers have transacted on the Capillary platform, with over $30 million of business passing through our system every month.</p>
-          <p>Capillary is not your everyday company; it is a powerhouse of ideas, driven by a burning entrepreneurial spirit. Started by IIT Kharagpur alumni, backed by Qualcomm Ventures and a group of amazing angel investors, Capillary has offices in Bangalore, London, Dubai, Delhi and Mumbai. At Capillary, we take pride in our people, and associate ourselves with the best minds, with a passion for rapid prototyping, architecting and scaling software for millions of users. For a Capillarian, there’s never a dull day at work!</p>
-        </div>
-        <div class="modal-footer">
-          <a href="http://capillary.co.in/" class="btn btn-primary sponsor-exit">Visit Capillary</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
-
-      <div class="modal fade sponsor-box" id="sponsor-adobe">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">&times;</a>
-          <h3>Adobe</h3>
-        </div>
-        <div class="modal-body">
-          <p>Whether it's a smartphone or tablet app, a game, a video, a digital magazine, a website, or an online experience, chances are that it was touched by Adobe technology. Our tools and services enable our customers to create groundbreaking digital content, deploy it across media and devices, and then continually measure and optimize it based on user data. By providing complete solutions that combine digital media creation with data-driven marketing, we help businesses improve their communications, strengthen their brands, and ultimately achieve greater business success.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="http://www.adobe.com/" class="btn btn-primary sponsor-exit">Visit Adobe</a>
-          <a data-dismiss="modal" class="btn">Close</a>
-        </div>
-      </div>
       
     </div><!-- /row -->
     <hr class="divider">
@@ -281,6 +162,7 @@
 <section id="schedule" class="section">
   <div class="container">
     <h2>Schedule</h2>
+    {#
     <div class="row">
       <div class="span12 preview">
         <h3>Event Preview</h3>
@@ -341,6 +223,8 @@
         </div><!-- /funnel -->
       </div><!-- /span -->
     </div><!-- /row for preview videos -->
+    
+    
     <div class="schedule">
       <table class="table all-tracks">
         <colgroup class="time"></colgroup> 
@@ -421,6 +305,8 @@
       {%- endfor %}
 
     </div><!-- /schedule -->
+    
+    #}
     <hr class="divider">
   </div><!-- /container -->
 </section><!-- /program -->
@@ -449,7 +335,7 @@
           <div class="timing">
             <h3>When</h3>
             <p class="legible">
-              21<sup>st</sup> April 2012<br>
+              September 2012<br>
               9:00 am to 6:00 pm
             </p>
           </div><!-- /timing -->

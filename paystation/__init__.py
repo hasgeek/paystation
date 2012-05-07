@@ -14,7 +14,7 @@ from coaster.app import configure
 # First, make an app and config it
 
 app = Flask(__name__, instance_relative_config=True)
-configure(app, 'METAREFRESH_ENV')
+configure(app, 'PAYSTATION_ENV')
 
 app.register_blueprint(baseframe)
 assets = Environment(app)
