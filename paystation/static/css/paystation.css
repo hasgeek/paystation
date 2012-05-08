@@ -6,7 +6,7 @@
 /* ============================ */
 
 html, body {
-	font: 14px futura-pt, 'Futura PT', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #F3F3F3 url(../img/stucco.png) repeat top left;
 }
 
@@ -51,7 +51,7 @@ html, body {
 }
 
 h1, h2, h3, h4, dd, .navbar .home {
-	font-family: futura-pt, 'Futura PT', Futura, 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 p {
 	font-size: 1em;
