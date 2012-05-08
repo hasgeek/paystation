@@ -103,10 +103,10 @@ hr {
 
 .header {
 	color: #EEE;
-	background-image: url(../img/missingpiece.jpg);
+	background-image: url(../img/aboveclouds.jpg);
 	padding-bottom: 3em;
 	margin-bottom: 4em;
-	text-align:center;
+
 }
 
 /*.header, [class*="span"] {
@@ -116,7 +116,6 @@ hr {
 	     -o-transition: all 0.25s ease-out;
 	        transition: all 0.25s ease-out; 
 }*/
-
 
 .banner { padding-top: 3em; }
 .banner h1,
@@ -132,11 +131,11 @@ hr {
 	line-height: 1.2;
 	color: white;
 }
-.masthead { height: 710px;}
+
 .masthead h1.ir {
-  background-image: url(../img/ps_logo.png);
+  background-image: url(../img/ps_logo_black.png);
   height:145px;
-	margin: 0.3em auto 0.2em;
+	margin: 0.3em auto 0.8em;
 	background-position:center;
 }
 .masthead h2,
@@ -149,6 +148,7 @@ hr {
 	letter-spacing: 0.1em;
 	word-spacing: 0.3em;
 	margin: 1em 0;
+	text-align:center;
 }
 .callout {
 	font-style: italic;
